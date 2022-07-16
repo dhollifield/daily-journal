@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300&family=Kaushan+Script&family=Rubik+Wet+Paint&family=Skranji&family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Daily Journal</title>
+</head>
+<body>
+
+    <header>
+        <img src="/images/journal-logo-2022.JPG" alt="Deanna Logo">
+        <h3>A Daily Journal of Deanna Hollifield</h3>
+    </header>
+
+    <main id="container">
+
+        <h2>Daily Journal</h2>
+        
+        <form class="entryform">
+
+            <fieldset>
+                <label for="entryDate">Date of Entry</label>
+                <input type="date" name="entryDate" class="entryForm__date">
+            </fieldset>
+
+            <fieldset>
+                <label for="conceptsCovered">Concepts Covered</label>
+                <textarea id="conceptsCovered" name="conceptsCovered" rows="1" cols="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea id="journalEntry" name="journalEntry" rows="5" cols="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="mood">Mood for the Day</label>
+                <select id="mood" name="mood">
+                    <option value="ok">OK</option>
+                    <option value="angry">angry</option>
+                    <option value="bored">bored</option>
+                    <option value="disappointed">disappointed</option>
+                    <option value="happy">happy</option>
+                    <option value="hungry">hungry</option>
+                    <option value="sad">sad</option>
+                    <option value="sleepy">sleepy</option>
+                    <option value="worried">worried</option>
+                </select>
+            </fieldset>
+
+            <button type="button">Record Journal Entry</button>
+
+        </form>
+
+        <article id="entries"></article>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
