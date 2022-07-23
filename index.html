@@ -39,42 +39,65 @@
             <fieldset>
                 <label for="mood">Mood for the Day</label>
                 <select id="mood" name="mood">
-                    <option value="ok">OK</option>
-                    <option value="angry">angry</option>
-                    <option value="bored">bored</option>
-                    <option value="disappointed">disappointed</option>
-                    <option value="happy">happy</option>
-                    <option value="hungry">hungry</option>
-                    <option value="sad">sad</option>
-                    <option value="sleepy">sleepy</option>
-                    <option value="worried">worried</option>
+                    <option value="ok">GOOD &#128522 </option>
+                    <option value="confident">CONFIDENT &#128526</option>
+                    <option value="unsure">UNSURE &#128532</option>
+                    <option value="confused">CONFUSED &#128533</option>
+                    <option value="overwhelmed">OVERWHELMED &#128534</option>
                 </select>
             </fieldset>
 
-            <button type="button">Record Journal Entry</button>
+            <button type="button" class="record-button">Record Journal Entry</button>
 
         </form>
 
-        <section class="rightSidebar">
-            <h2>Right Sidebar</h2>
-            
         </section>
 
         <section class="journalEntries">
-            <h2 class="entriesTitle">Journal Entries</h2>
-
-            <article class="entries" id="entries">
-                <p>Entry #1</p>
-                <p>Entry #2</p>
-                <p>Entry #3</p>
-                <p>Entry #4</p>
-            </article>
+            <h2>Journal Entries</h2>
+            <div>
+                <p class="entry"><strong>Date: 7/9/2022</strong><br>
+                    <strong>Concepts Covered:</strong> Dev Tools Research<br>
+                    <strong>Mood:</strong> &#128522<br><br>
+                    We broke up into study groups of 4-5 people per team. Each group was assigned
+                        a dev tool to research. Our team researched Git & Github...
+                        <button type="button" id="editButton">Edit</button>
+                        <button type="button" id="deleteButton">Delete</button>
+                </p>
+                <p class="entry"><strong>Date: 7/11/2022</strong><br>
+                    <strong>Concepts Covered:</strong> Dev Tools, HTML...<br>
+                    <strong>Mood:</strong> &#128526<br><br>
+                    The various study groups presented the dev tools they had researched. This
+                        included the Terminal, VS Code, Markdown, Shortcut Keys...
+                    <button type="button" id="editButton">Edit</button>
+                    <button type="button" id="deleteButton">Delete</button>
+                </p>
+                <p class="entry"><strong>Date: 7/12/2022</strong><br>
+                    <strong>Concepts Covered:</strong> Dev Tools, HTML...<br>
+                    <strong>Mood:</strong> &#128532<br><br>
+                    Lynn demonstrated using the terminal to navigate directories, make new directories
+                        (folders), make new folders, move in an out of directories...
+                    <button type="button" id="editButton">Edit</button>
+                    <button type="button" id="deleteButton">Delete</button>
+                </p>
+                <p class="entry">
+                    <strong>Date: 7/18/2022</strong><br>
+                    <strong>Concepts Covered:</strong> Dev Tools, HTML...<br>
+                    <strong>Mood:</strong> &#128533<br><br>
+                    We learned about Git and Github including how to work with a team on the same
+                        repositories in Github. This was very overwhelming with a lot of...
+                    <button type="button" id="editButton">Edit</button>
+                    <button type="button" id="deleteButton">Delete</button>
+                </p>
+            </div>
         </section>
 
     </main>
 
     <footer>
-
+        <p>Deanna Hollifield</p>
+        <p><a href="https://github.com/dhollifield" target="_blank">Github</a></p>
+        <p>Copyright ©2022 Deanna Hollifield</p>
     </footer>
     
 </body>

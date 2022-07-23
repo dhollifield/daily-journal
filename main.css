@@ -15,7 +15,7 @@ h3 {
 
 header {
     float: left;
-    margin: 20px;
+    margin: 20px 20px 10px 20px;
     padding: 0 0 40px 0;
     width: 300px;
 }
@@ -27,41 +27,68 @@ header {
     font-size: 18px;
     box-shadow: 0 4px 8px 0 darkslateblue;
     transition: 0.3s;
-    width: 50%;
     border-radius: 3px;
 }
 
 button {
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    background-color: darkslateblue;
+    box-shadow: 0 4px 8px 0 darkslateblue;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: crimson;
+}
+
+h2 {
+    margin: 30px 0 0 20px;
+    text-align: left;
+}
+
+.journalEntries {
     font-family: 'Patrick Hand', cursive;
 }
 
-.rightSidebar {
-    margin: 20px;
-    padding: 10px;
-    width: 300px;
-}
-
-.entriesTitle {
-    margin: 20px;
-    padding: 10px;
-}
-.entries {
+div {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space evenly;
-    font-family: 'Patrick Hand', cursive;
-    padding: 0 0 0 10px;
-    width: 78%;
+    justify-content: space-around;
 }
 
-p {
+.entry {
     background-color: #FFFFFF;
     border: 1px solid black;
-    margin: 20px;
-    padding: 10px;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 darkslateblue;
     transition: 0.3s;
-    width: 250px;
+    margin: 50px;
+    padding: 15px;
+    height: 250px;
+    width: 300px;
+    position: relative;
+}
+
+#editButton {
+    width: 60px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#deleteButton {
+    width: 60px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer {
+    text-align: center;
 }
