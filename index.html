@@ -10,33 +10,35 @@
 </head>
 <body>
 
-    <header>
-        <img src="/images/journal-logo-2022.JPG" alt="Deanna Logo">
-        <h3>A Daily Journal of Deanna Hollifield</h3>
-    </header>
-
     <main id="container">
 
+        <header>
+            <img src="/images/journal-logo-2022.JPG" alt="Deanna Logo">
+            <h3>A Daily Journal of Deanna Hollifield</h3>
+        </header>
+
         <!-- <h2>Daily Journal</h2> -->
+
+        <section>
         
         <form class="entryform">
 
-            <fieldset>
+            <fieldset class="entry-boxes" id="entryDate">
                 <label for="entryDate">Date of Entry</label>
                 <input type="date" name="entryDate" class="entryForm__date">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="entry-boxes">
                 <label for="conceptsCovered">Concepts Covered</label>
                 <textarea id="conceptsCovered" name="conceptsCovered" rows="1" cols="10"></textarea>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="entry-boxes">
                 <label for="journalEntry">Journal Entry</label>
                 <textarea id="journalEntry" name="journalEntry" rows="5" cols="10"></textarea>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="entry-boxes">
                 <label for="mood">Mood for the Day</label>
                 <select id="mood" name="mood">
                     <option value="ok">GOOD &#128522 </option>
@@ -54,8 +56,9 @@
         </section>
 
         <section class="journalEntries">
-            <h2>Journal Entries</h2>
+            <h2 class="journal-entries-heading">Journal Entries</h2>
             <div>
+                <!-- <p id="testEntry"></p> -->
                 <p class="entry"><strong>Date: 7/9/2022</strong><br>
                     <strong>Concepts Covered:</strong> Dev Tools Research<br>
                     <strong>Mood:</strong> &#128522<br><br>

@@ -32,16 +32,18 @@ const journalEntries = [
 ]
 // console.log(journalEntries)
 
+
 for (const journalEntry of journalEntries) {
     console.log(journalEntry.entry)
+    document.getElementById('testEntry').innerHTML = `<p>${journalEntry.entry}</p>`
 }
 
-for (const journalEntry of journalEntries) {
-    console.log(journalEntry.concept)
-}
+// for (const journalEntry of journalEntries) {
+//     console.log(journalEntry.concept)
+// }
 
-for (const journalEntry of journalEntries) {
-    if ((journalEntry.id % 2) != 0) {
-    console.log(journalEntry.id)
-    } 
-}
+// for (const journalEntry of journalEntries) {
+//     if ((journalEntry.id % 2) != 0) {
+//     console.log(journalEntry.id)
+//     } 
+// }
