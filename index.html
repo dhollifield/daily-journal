@@ -6,101 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300&family=Kaushan+Script&family=Rubik+Wet+Paint&family=Skranji&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Daily Journal</title>
 </head>
 <body>
 
-    <main id="container">
-
-        <header>
-            <img src="/images/journal-logo-2022.JPG" alt="Deanna Logo">
-            <h3>A Daily Journal of Deanna Hollifield</h3>
-        </header>
-
-        <!-- <h2>Daily Journal</h2> -->
-
-        <section>
-        
-        <form class="entryform">
-
-            <fieldset class="entry-boxes" id="entryDate">
-                <label for="entryDate">Date of Entry</label>
-                <input type="date" name="entryDate" class="entryForm__date">
-            </fieldset>
-
-            <fieldset class="entry-boxes">
-                <label for="conceptsCovered">Concepts Covered</label>
-                <textarea id="conceptsCovered" name="conceptsCovered" rows="1" cols="10"></textarea>
-            </fieldset>
-
-            <fieldset class="entry-boxes">
-                <label for="journalEntry">Journal Entry</label>
-                <textarea id="journalEntry" name="journalEntry" rows="5" cols="10"></textarea>
-            </fieldset>
-
-            <fieldset class="entry-boxes">
-                <label for="mood">Mood for the Day</label>
-                <select id="mood" name="mood">
-                    <option value="ok">GOOD &#128522 </option>
-                    <option value="confident">CONFIDENT &#128526</option>
-                    <option value="unsure">UNSURE &#128532</option>
-                    <option value="confused">CONFUSED &#128533</option>
-                    <option value="overwhelmed">OVERWHELMED &#128534</option>
-                </select>
-            </fieldset>
-
-            <button type="button" class="record-button">Record Journal Entry</button>
-
-        </form>
-
-        </section>
-
-        <section class="journalEntries">
-            <h2 class="journal-entries-heading">Journal Entries</h2>
-            <div id="journalEntries">
-                <!-- <p id="testEntry"></p> -->
-                <!-- <p class="entry"><strong>Date: 7/9/2022</strong><br>
-                    <strong>Concepts Covered:</strong> Dev Tools Research<br>
-                    <strong>Mood:</strong> &#128522<br><br>
-                    We broke up into study groups of 4-5 people per team. Each group was assigned
-                        a dev tool to research. Our team researched Git & Github...
-                        <button type="button" id="editButton">Edit</button>
-                        <button type="button" id="deleteButton">Delete</button>
-                </p>
-                <p class="entry"><strong>Date: 7/11/2022</strong><br>
-                    <strong>Concepts Covered:</strong> Dev Tools, HTML...<br>
-                    <strong>Mood:</strong> &#128526<br><br>
-                    The various study groups presented the dev tools they had researched. This
-                        included the Terminal, VS Code, Markdown, Shortcut Keys...
-                    <button type="button" id="editButton">Edit</button>
-                    <button type="button" id="deleteButton">Delete</button>
-                </p>
-                <p class="entry"><strong>Date: 7/12/2022</strong><br>
-                    <strong>Concepts Covered:</strong> Terminal and HTML</HTML><br>
-                    <strong>Mood:</strong> &#128532<br><br>
-                    Lynn demonstrated using the terminal to navigate directories, make new directories
-                        (folders), make new folders, move in an out of directories...
-                    <button type="button" id="editButton">Edit</button>
-                    <button type="button" id="deleteButton">Delete</button>
-                </p>
-                <p class="entry">
-                    <strong>Date: 7/18/2022</strong><br>
-                    <strong>Concepts Covered:</strong> Git and Github<br>
-                    <strong>Mood:</strong> &#128533<br><br>
-                    We learned about Git and Github including how to work with a team on the same
-                        repositories in Github. This was very overwhelming with a lot of...
-                    <button type="button" id="editButton">Edit</button>
-                    <button type="button" id="deleteButton">Delete</button>
-                </p> -->
-            </div>
-        </section>
-
-    </main>
+    <main id="container"></main>
 
     <footer>
-        <p>Deanna Hollifield</p>
-        <p><a href="https://github.com/dhollifield" target="_blank">Github</a></p>
-        <p>Copyright ©2022 Deanna Hollifield</p>
+        <p class="social-media">
+
+            <a href="https://github.com/dhollifield" target="_blank">
+                <i class="fa fa-github" style="font-size:48px"></i></a>
+
+            <a href="https://www.facebook.com/deanna.hollifield" target="_blank">
+                <i class="fa fa-facebook" style="font-size:48px"></i></a>
+
+            <a href="https://twitter.com/deaner66" target="_blank">
+                <i class="fa fa-twitter" style="font-size:48px"></i></a>
+
+        </p>
+
+        <p class="copyright">Copyright ©2022 Deanna Hollifield</p>
     </footer>
 
     <script type="module" src="./scripts/main.js"></script>

@@ -10,7 +10,7 @@ img {
     width: 300px;
 }
 
-h3 {
+.journal-tag-line {
     text-align: center;
     font-family: 'Patrick Hand', cursive;
     font-size: 1em;
@@ -111,6 +111,22 @@ div {
     right: 0;
 }
 
+/* Style all font awesome icons */
+.fa {
+    color: darkslateblue;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    color: crimson;
+    opacity: 0.7;
+  }
+
 footer {
     background-color: #FFFFFF;
     border: 1px solid black;
@@ -119,3 +135,4 @@ footer {
     transition: 0.3s;
     text-align: center;
 }
+
