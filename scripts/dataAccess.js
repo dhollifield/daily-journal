@@ -11,7 +11,7 @@ export const fetchEntries = async ()=> {
 }
 
 export const getJournalEntries = () => {
-    const copyOfEntries = journalEntries.map(entry => ({...entry}))
+    const copyOfEntries = applicationState.entries.map(entry => ({...entry}))
     return copyOfEntries
 }
 
@@ -24,9 +24,25 @@ const getNewJournalEntryId = () => {
     return highestOrderId + 1
 }
 
-export const addNewEntry = (entry) => {
-    const newId = getNewJournalEntryId();
-    entry.id = newId;
-    journalEntries.push(entry)
-    document.dispatchEvent(new CustomEvent("stateChanged"))
-}
+// export const addNewEntry = (entry) => {
+//     const newId = getNewJournalEntryId();
+//     entry.id = newId;
+//     journalEntries.push(entry)
+//     document.dispatchEvent(new CustomEvent("stateChanged"))
+// }
+
+export const addNewEntry = async (entry) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(entry)
+    }
+  
+    const mainContainer = document.querySelector("#container")
+    const response = await fetch(`${API}/journalEntries`, fetchOptions)
+    const responseJson = await response.json()
+    mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+    return responseJson
+  }

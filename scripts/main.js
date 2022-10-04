@@ -1,4 +1,4 @@
-import { getJournalEntries, addNewEntry } from './entries.js'
+import { getJournalEntries, addNewEntry, fetchEntries } from './dataAccess.js'
 
 
 document.getElementById("container").innerHTML = `
@@ -49,7 +49,8 @@ document.getElementById("container").innerHTML = `
         </section>
         `;
 
-const displayEntries = () => {
+const displayEntries = async () => {
+    await fetchEntries()
     const journalEntries = getJournalEntries()
 
     let allEntries = ""
@@ -66,9 +67,18 @@ const displayEntries = () => {
         </div>`
     }
 
-document.getElementById("journalEntries").innerHTML += allEntries
+document.getElementById("journalEntries").innerHTML = allEntries
 
 }
+
+displayEntries()
+
+const mainContainer = document.querySelector("#container")
+
+mainContainer.addEventListener("stateChanged", (event) => {
+    displayEntries()
+ });
+
 // Add the Event Listener
 
 document.addEventListener("click", (event) => {
@@ -88,9 +98,7 @@ document.addEventListener("click", (event) => {
     };
 });
 
-document.addEventListener("stateChanged", (event) => {
-    displayEntries()
-});
+
 
 
 
